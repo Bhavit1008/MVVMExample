@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!--Required viewModel, injected via mBinding.vm = mViewMode-->
+        <variable
+            name="vm"
+            type="com.example.mvvmexample.viewmodel.TaskViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edt_count"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="count"
+            android:id="@+id/btn_count"
+            android:layout_below="@+id/edt_count"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+</layout>
+
