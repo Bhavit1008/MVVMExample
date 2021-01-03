@@ -1,4 +1,4 @@
-package com.example.mvvmexample.view
+package com.example.mvvmexample.view.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
