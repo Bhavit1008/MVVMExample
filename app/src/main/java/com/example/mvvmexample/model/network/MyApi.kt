@@ -23,7 +23,7 @@ interface MyApi {
         operator fun invoke(): MyApi
         {
             return Retrofit.Builder()
-                .baseUrl("https://api.simplifiedcoding.in/course-apis/mvvm/")
+                .baseUrl("https://postman-email/login/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(MyApi::class.java)

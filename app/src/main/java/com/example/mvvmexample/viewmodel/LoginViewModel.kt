@@ -2,6 +2,7 @@ package com.example.mvvmexample.viewmodel
 
 import android.view.View
 import androidx.lifecycle.ViewModel
+import com.example.mvvmexample.model.repository.UserRepository
 import com.example.mvvmexample.view.auth.LoginListner
 
 class LoginViewModel:ViewModel() {
@@ -17,7 +18,8 @@ class LoginViewModel:ViewModel() {
             return
         }
         else{
-
+            val userLoginResponse = UserRepository().loginUser(email!!,password!!)
+            loginListner?.onSuccess(userLoginResponse)
         }
     }
 
